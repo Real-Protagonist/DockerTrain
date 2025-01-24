@@ -4,4 +4,6 @@ WORKDIR "/app"
 
 COPY . .
 
-CMD ["python", "app/index.py"]
+RUN pip install Flask
+
+CMD ["python", "app/node.py"]
